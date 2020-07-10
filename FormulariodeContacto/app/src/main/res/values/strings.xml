@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Formulario de Contacto</string>
+    <string name="TextoTituloActivity1">Introducir Datos</string>
+    <string name="HintNombre">Nombre Completo</string>
+    <string name="HintFecha">Fecha de nacimiento (dd/mm/aaaa)</string>
+    <string name="HintTelefono">Telefono</string>
+    <string name="HintEmail">Email</string>
+    <string name="HintDescripcion">Descripcion</string>
+    <string name="TextoBotonActivity1">Siguiente</string>
+    <string name="TextoTituloActivity2">Confirmar Datos</string>
+    <string name="TextoparaNombre">Nombre Completo: </string>
+    <string name="TextoparaFecha">Fecha de nacimiento: </string>
+    <string name="TextoparaTelefono">Telefono: </string>
+    <string name="TextoparaEmail">Email: </string>
+    <string name="TextoparaDescripcion">Descripción: </string>
+    <string name="TextoBotonActivity2">Editar Datos</string>
+</resources>

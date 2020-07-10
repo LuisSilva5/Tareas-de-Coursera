@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/id_BotonSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TextoBotonActivity1"
+        android:textSize="25dp"
+        android:theme="@style/Theme.MaterialComponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_IVFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pickerfecha"
+        app:layout_constraintBottom_toBottomOf="@+id/id_TextInputLayoutFecha"
+        app:layout_constraintStart_toEndOf="@+id/id_TextInputLayoutFecha"
+        app:layout_constraintTop_toTopOf="@+id/id_TextInputLayoutFecha" />
+
+    <TextView
+        android:id="@+id/id_TextViewTitulodeMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/TextoTituloActivity1"
+        android:textColor="@color/colorNegro"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_TextInputLayoutNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/id_TextViewTitulodeMainActivity"
+        app:layout_constraintStart_toStartOf="@+id/id_TextViewTitulodeMainActivity"
+        app:layout_constraintTop_toBottomOf="@+id/id_TextViewTitulodeMainActivity">
+
+        <EditText
+            android:id="@+id/id_EditTextNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="18"
+            android:hint="@string/HintNombre"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_TextInputLayoutFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintStart_toStartOf="@+id/id_TextInputLayoutNombre"
+        app:layout_constraintTop_toBottomOf="@+id/id_TextInputLayoutNombre">
+
+        <EditText
+            android:id="@+id/id_EditTextFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/HintFecha"
+            android:ems="15"
+            android:inputType="date"
+            android:textSize="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_TextInputLayoutTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintStart_toStartOf="@+id/id_TextInputLayoutFecha"
+        app:layout_constraintTop_toBottomOf="@+id/id_TextInputLayoutFecha">
+
+        <EditText
+            android:id="@+id/id_EditTextTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="p"
+            android:ems="18"
+            android:hint="@string/HintTelefono"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_TextInputLayoutEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintStart_toStartOf="@+id/id_TextInputLayoutTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/id_TextInputLayoutTelefono">
+
+        <EditText
+            android:id="@+id/id_EditTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:hint="@string/HintEmail"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/id_TextInputLayoutDescripcion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    app:layout_constraintStart_toStartOf="@+id/id_TextInputLayoutEmail"
+    app:layout_constraintTop_toBottomOf="@+id/id_TextInputLayoutEmail">
+
+    <EditText
+        android:id="@+id/id_EditTextDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="18"
+        android:hint="@string/HintDescripcion"
+        android:inputType="text"
+        android:textSize="15sp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
